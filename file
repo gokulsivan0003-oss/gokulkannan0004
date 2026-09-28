@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #020617;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        .hero {
+            min-height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            margin: 20px 0;
+            font-size: 20px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #38bdf8;
+            color: #020617;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .about {
+            padding: 80px 10%;
+            text-align: center;
+            background: #1e293b;
+        }
+
+        .about h2 {
+            font-size: 35px;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+
+<body>
+
+<nav>
+    <h2>MyPortfolio</h2>
+
+    <div>
+        <a href="/">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+
+    <div>
+        <h1>Hello, I'm <span th:text="${name}">Gokul Kannan</span></h1>
+
+        <p>
+            <span th:text="${role}">Java Developer</span>
+        </p>
+
+        <a href="#about" class="btn">
+            Explore My Profile
+        </a>
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        I am a Java developer interested in building web applications
+        using Java, Spring Boot, MySQL and modern web technologies.
+    </p>
+
+</section>
+
+<footer id="contact">
+    <p>© 2026 My Portfolio | Java Developer</p>
+</footer>
+
+</body>
+</html>
